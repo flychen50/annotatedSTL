@@ -9,6 +9,8 @@ template <class T>
 struct display{
   void operator()(const T& x)const{
     cout<<x<<' ';
+    copy_backward(_BIter1, _BIter1, _BIter2);
+    //    std::endl(basic_ostream<_CharT, _Traits> &__os)
 }
 };
 
