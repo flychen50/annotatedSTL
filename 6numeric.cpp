@@ -1,9 +1,9 @@
 /**
  *Copyright (C) 2014 by weibo inc
- * @desc: 
+ * @desc: my sample for numeric
  * @auth: xinfeng
  * @mail: xinfeng@staff.weibo.com.cn
- * @date: 
+ * @date:Mon Mar 16 22:01:53 2015
  */
 
 #include<numeric>
