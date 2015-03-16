@@ -1,3 +1,11 @@
+/**
+ *Copyright (C) 2014 by weibo inc
+ * @desc: 
+ * @auth: xinfeng
+ * @mail: xinfeng@staff.weibo.com.cn
+ * @date: 
+ */
+
 #include<numeric>
 #include<ext/numeric>
 #include<algorithm>
