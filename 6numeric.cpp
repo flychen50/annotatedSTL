@@ -40,4 +40,5 @@ int main(){
   // int n=3;
   // iota(iv.begin(),iv.end(),n);
   // for_each(iv.begin(),iv.end(),display<int>());
+
 }
