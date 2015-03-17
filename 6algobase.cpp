@@ -9,40 +9,23 @@ template <class T>
 struct display{
   void operator()(const T& x)const{
     cout<<x<<' ';
-    copy_backward(_BIter1, _BIter1, _BIter2);
-    //    std::endl(basic_ostream<_CharT, _Traits> &__os)
 }
 };
-
-template <class InputIterator1,class InputIterator2>
-inline bool equal_cxf(InputIterator1 first1,InputIterator2 last1,InputIterator2 first2){
-  for(;first1!=last1;++first1,++first2)
-    if(*first1!=*first2)
-      return false;
-  return true;
-
-
-}
-
-
 
 int main(){
   int ia[10]={0,1,2,3,4,5,6,7,8,9};
   vector<int> iv1(ia,ia+5);
   vector<int> iv2(ia,ia+9);
+  // cout<<*(mismatch(iv1.begin(),iv1.end(),iv2.begin()).first)<<endl;
+  // cout<<*(mismatch(iv1.begin(),iv1.end(),iv2.begin()).second)<<endl;;
+  //   cout<<  equal(iv1.begin(),iv1.end(),iv1.begin());
+   //cout<<  equal(iv1.begin(),iv1.end(),&ia[3],less<int>());
+   fill(iv1.begin(),iv1.end(),9);
+   fill_n(iv1.begin(),3,7);
 
-  cout<<*(mismatch(iv1.begin(),iv1.end(),iv2.begin()).first);
-  cout<<*(mismatch(iv1.begin(),iv1.end(),iv2.begin()).second);
 
-  for_each(iv1.begin(),iv1.end(),display<int>());
-
-  cout<<equal_cxf(iv1.begin(),iv1.end(),iv2.begin());
-  // cout<<*max(*)
-
-  string stra1[] = {"Jamie","JJHou","Jason"};
- string stra2[] = {"Jamie","JJhou","Jason"};
- // cout<<"compare:"<<lexicographical_compare(stra1,stra1+2,stra2,stra2+2);
- copy(ia+2,ia+7,ia+4);
-
- for_each(ia,ia+9,display<int>());
+  vector<int>::iterator ite1 = iv1.begin();
+  vector<int>::iterator ite2 = ite1;
+  advance(ite2,3);
+  for_each(ite2,iv1.end(),display<int>());
 }
