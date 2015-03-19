@@ -1,8 +1,0 @@
-#include <iostream>
-using namespace std;
-main(){
-  std::nth_element();
-  copy_backward(_BI1 __first, _BI1 __last, _BI2 __result);
-
-}
-
