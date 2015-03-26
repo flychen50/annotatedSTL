@@ -1,3 +1,11 @@
+/**
+ *Copyright (C) 2015 by weibo inc
+ * @desc: for upper_bound and others
+ * @auth: xinfeng
+ * @mail: xinfeng@staff.weibo.com.cn
+ * @date:Thu Mar 26 21:06:30 2015
+ */
+
 #include <algorithm>
 #include <vector>
 #include <functional>
@@ -82,11 +90,21 @@ int main(int argc, char *argv[])
   for_each(iv7.begin(),iv7.end(),display<int>());
   //  partition(iv7.begin(),iv7.end(),even());
   //  stable_partition(iv7.begin(),iv7.end(),even());
-  vector<int>::iterator ud = unique(iv7.begin(),iv7.end());
-  iv7.erase(ud,iv7.end());
+  // vector<int>::iterator ud = unique(iv7.begin(),iv7.end());
+  // iv7.erase(ud,iv7.end());
+  // cout<<endl;
+  // for_each(iv7.begin(),iv7.end(),display<int>());
   cout<<endl;
+  //  vector<int>::iterator ub = lower_bound(iv7.begin(),iv7.end(),12);
+  //  vector<int>::iterator ub = upper_bound(iv7.begin(),iv7.end(),12);
+  // next_permutation(iv7.begin(),iv7.end());
+  // for_each(iv7.begin(),iv7.end(),display<int>());
+  // cout<<endl;
+  //  prev_permutation(iv7.begin(),iv7.end());
+  // //  next_permutation(iv7.begin(),iv7.end());
+  //  random_shuffle(iv7.begin(),iv7.end());
+  random_shuffle(iv7.begin(),iv7.end());
   for_each(iv7.begin(),iv7.end(),display<int>());
-
-
+  cout<<endl;
   return 0;
 }
