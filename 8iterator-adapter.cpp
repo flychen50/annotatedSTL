@@ -13,6 +13,9 @@ int ia[  ]=  {
 
 
  copy( id.begin(),id.end(),outite );
+ cout<<endl;
  copy( ia+1,ia+2,front_inserter(id) );
+ copy(ia+3,ia+5,back_inserter(id));
+ copy( id.begin(),id.end(),outite );
  cout<<endl;
 }

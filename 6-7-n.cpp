@@ -104,6 +104,8 @@ int main(int argc, char *argv[])
   // //  next_permutation(iv7.begin(),iv7.end());
   //  random_shuffle(iv7.begin(),iv7.end());
   random_shuffle(iv7.begin(),iv7.end());
+  //  partial_sort(iv7.begin(),iv7.begin()+10,iv7.end());
+  nth_element(iv7.begin(),iv7.begin()+5,iv.end());
   for_each(iv7.begin(),iv7.end(),display<int>());
   cout<<endl;
   return 0;

@@ -40,4 +40,5 @@ int main(){
   string stral2 []= {"chen","xim","feng"};
   cout<<lexicographical_compare(stral1,stral1+2,stral2,stral2+2);
   cout<<lexicographical_compare(stral1,stral1+2,stral2,stral2+2,greater<string>());
-}
+
+      }

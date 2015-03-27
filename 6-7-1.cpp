@@ -87,6 +87,5 @@ int main(int argc, char *argv[])
   cout<<endl;
   for_each(iv7.begin(),iv7.end(),display<int>());
 
-
-  return 0;
+      return 0;
 }
